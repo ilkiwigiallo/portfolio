@@ -1,0 +1,9 @@
+Ora non ti resta che creare le cartelle e caricare i file:
+   1. Vai in public e crea una cartella chiamata images.
+   2. Entra in images e crea una cartella chiamata journey.
+   3. Copia i tuoi file rinominandoli così:
+       * high-school.jpg
+       * electrician.jpg
+       * it-specialist.jpg
+       * university.jpg
+       * fullstack-dev.jpg
