@@ -1,0 +1,134 @@
+/* Variables & Root */
+:root {
+    --primary-color: #3b82f6;      /* Blue 600 */
+    --primary-dark: #1d4ed8;       /* Blue 700 */
+    --primary-light: #eff6ff;      /* Blue 50 */
+    --text-dark: #1e293b;          /* Slate 800 */
+    --text-light: #ffffff;
+    --border-color: #f1f5f9;       /* Slate 100 */
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    --shadow-hover: rgba(59, 130, 246, 0.3);
+}
+
+/* Root & Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
+    user-select: none;         /* Standard */
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* Timeline - Animazioni di ingresso */
+.timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.7s ease-out;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skills Grid - Responsive Cards with Fixed Icons */
+.skill-card-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    z-index: 10;
+    perspective: 1000px; 
+}
+
+.skill-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-light);
+    border-radius: 2rem;
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease-out;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px var(--shadow-color);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.skill-card:hover {
+    background-color: var(--primary-color); 
+    border-color: var(--primary-color);
+    z-index: 50;
+    box-shadow: 0 20px 25px -5px var(--shadow-hover);
+}
+
+.icon-box {
+    width: 64px; 
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 0.75rem;
+    pointer-events: none; /* Risolve sparizioni e flicker */
+    transform: translateZ(20px);
+}
+
+/* Riduzione icona solo su mobile estremo per evitare overlap */
+@media (max-width: 400px) {
+    .icon-box {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.skill-card:hover .icon-box {
+    transform: scale(1.1) translateZ(30px);
+}
+
+.skill-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.skill-name {
+    transition: color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--text-dark);
+    pointer-events: none;
+    transform: translateZ(15px);
+}
+
+.skill-card:hover .skill-name {
+    color: var(--text-light);
+}
+
+/* Animations from Contact Page */
+@keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+}
+
+/* Sky Gradients */
+.sky-dawn { background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); }
+.sky-day { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.sky-sunset { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+.sky-night { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }

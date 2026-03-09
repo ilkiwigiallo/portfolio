@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kevin's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 font-sans antialiased text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black text-blue-600 tracking-tighter uppercase">KIWI.</a>
+
+            <div class="flex items-center gap-8">
+                <ul class="flex space-x-8 font-extrabold text-sm md:text-base">
+                    <li><a href="index.html" class="text-slate-600 hover:text-blue-600 transition-colors">About</a></li>
+                    <li><a href="contact.html" class="text-blue-600 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="pt-32 pb-16 md:pt-48 md:pb-32 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-6xl font-black text-slate-800 mb-6">Let's <span class="text-blue-600">Connect</span></h1>
+                <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                    Have a project in mind, a question, or just want to say hi? I'm always open to discussing new opportunities and creative ideas.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Row 1: Info & Dynamic Time -->
+                <div class="grid md:grid-cols-5 gap-8 items-stretch">
+                    <!-- Contact Info (Wider) -->
+                    <div class="md:col-span-3 flex">
+                        <div class="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow w-full flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-slate-800 mb-8">Contact Information</h3>
+                            
+                            <div class="grid sm:grid-cols-1 gap-y-8">
+                                <div class="flex items-center gap-6 group min-w-0">
+                                    <div class="w-14 h-14 flex-shrink-0 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div class="min-w-0">
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-1">Email Address</p>
+                                        <a href="mailto:kevin.capoferri@studenti.unicam.it" class="text-slate-700 font-bold hover:text-blue-600 transition-colors break-all text-lg block">kevin.capoferri@studenti.unicam.it</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-6 group min-w-0">
+                                    <div class="w-14 h-14 flex-shrink-0 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
+                                        <i class="fab fa-linkedin-in text-xl"></i>
+                                    </div>
+                                    <div class="min-w-0">
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-1">LinkedIn Profile</p>
+                                        <a href="https://www.linkedin.com/in/kevincapoferri/" target="_blank" class="text-slate-700 font-bold hover:text-blue-600 transition-colors break-all text-lg block font-mono">linkedin.com/in/kevincapoferri</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-6 group min-w-0">
+                                    <div class="w-14 h-14 flex-shrink-0 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
+                                        <i class="fab fa-github text-xl"></i>
+                                    </div>
+                                    <div class="min-w-0">
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-1">GitHub Portfolio</p>
+                                        <a href="https://github.com/ilkiwigiallo" target="_blank" class="text-slate-700 font-bold hover:text-blue-600 transition-colors break-all text-lg block font-mono">github.com/ilkiwigiallo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enhanced Dynamic Local Time -->
+                    <div class="md:col-span-2 flex">
+                        <div id="sky-card" class="relative w-full rounded-3xl p-8 overflow-hidden flex flex-col justify-between text-white transition-all duration-1000 shadow-lg border border-white/10">
+                            <!-- Sky Background Layers -->
+                            <div id="sky-gradient" class="absolute inset-0 transition-opacity duration-1000"></div>
+                            
+                            <!-- Animated Elements -->
+                            <div class="relative z-10 flex justify-between items-start">
+                                <div>
+                                    <p class="text-[10px] font-black uppercase tracking-[0.3em] opacity-80 mb-1">My Local Time</p>
+                                    <h3 id="local-time" class="text-4xl font-black tracking-tighter">00:00</h3>
+                                    <p class="text-[10px] font-medium opacity-60">ITALY (GMT+1)</p>
+                                </div>
+                                <div id="celestial-icon" class="text-4xl animate-bounce-slow">
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                            </div>
+
+                            <div class="relative z-10 mt-12">
+                                <p id="time-greeting" class="text-lg font-bold leading-tight">Have a great day!</p>
+                                <div class="w-8 h-1 bg-white/30 rounded-full mt-3"></div>
+                            </div>
+
+                            <!-- Decorative stars for night -->
+                            <div id="stars" class="absolute inset-0 opacity-0 transition-opacity duration-1000 pointer-events-none">
+                                <div class="absolute top-10 left-1/4 w-1 h-1 bg-white rounded-full animate-pulse"></div>
+                                <div class="absolute top-20 right-1/3 w-0.5 h-0.5 bg-white rounded-full animate-pulse delay-700"></div>
+                                <div class="absolute bottom-1/4 left-1/2 w-1 h-1 bg-white rounded-full animate-pulse delay-1000"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: Availability -->
+                <div class="bg-blue-600 p-8 rounded-3xl shadow-lg text-white relative overflow-hidden group flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="absolute -right-4 -bottom-4 w-32 h-32 bg-blue-500 rounded-full blur-3xl opacity-50 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10 text-center md:text-left">
+                        <h4 class="text-xl font-bold mb-1">Current Status</h4>
+                        <p class="text-blue-100 font-medium">I'm currently available for freelance work and full-time positions.</p>
+                    </div>
+                    <div class="relative z-10 flex items-center gap-3 bg-white/10 px-6 py-3 rounded-2xl border border-white/20 backdrop-blur-sm">
+                        <span class="flex h-3 w-3 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
+                        </span>
+                        <span class="text-sm font-black tracking-tight uppercase">Available for new projects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 text-center text-slate-400">
+        <p>© 2026 Kevin. Built with Passion & Code.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
