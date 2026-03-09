@@ -57,12 +57,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40 animate-bounce">
-            <span class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">Scroll</span>
-            <div class="w-px h-12 bg-gradient-to-b from-blue-600 to-transparent"></div>
-        </div>
     </section>
 
     <!-- Timeline Section -->
@@ -74,12 +68,12 @@
             
             <div class="relative">
                 <!-- Single Vertical Line -->
-                <div class="timeline-line absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-600/30 z-0"></div>
+                <div class="timeline-line absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-600/30 z-0 hidden md:block"></div>
 
                     <!-- 1. Education: High School -->
-                    <div class="timeline-item relative md:flex md:items-center group">
-                        <div class="md:w-5/12 mb-4 md:mb-0 opacity-40 group-hover:opacity-100 transition-opacity">
-                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=1080" class="rounded-2xl shadow-lg border-2 border-white grayscale group-hover:grayscale-0 transition-all w-full" alt="High School">
+                    <div class="timeline-item relative md:flex md:items-center group mb-12">
+                        <div class="md:w-5/12 mb-4 md:mb-0 opacity-40 group-hover:opacity-100 transition-opacity hidden md:block">
+                            <img src="public/images/journey/high-school.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=1080';" class="rounded-2xl shadow-lg border-2 border-white grayscale group-hover:grayscale-0 transition-all w-full" alt="High School">
                         </div>
                         <div class="timeline-dot-container hidden md:flex md:w-2/12 md:justify-center">
                             <div class="timeline-dot w-6 h-6 md:w-8 md:h-8 bg-white border-2 md:border-4 border-slate-200 rounded-full z-20 group-hover:border-blue-600 group-hover:scale-125 transition-all cursor-pointer shadow-sm"></div>
@@ -87,11 +81,11 @@
                         <div class="md:w-5/12">
                             <div class="timeline-content bg-white p-6 rounded-2xl md:rounded-3xl shadow-lg border border-transparent group-hover:border-blue-100 transition-all cursor-pointer">
                                 <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 overflow-hidden">
-                                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest min-h-0">Education</span>
+                                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest min-h-0 text-center md:text-left">Education</span>
                                 </div>
-                                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mt-1">Diploma in Informatica e Telecomunicazioni</h3>
+                                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mt-1 text-center md:text-left">Diploma in Informatica e Telecomunicazioni</h3>
                                 <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 overflow-hidden">
-                                    <div class="min-h-0">
+                                    <div class="min-h-0 text-left">
                                         <p class="text-blue-600 font-bold mt-2 tracking-tighter">Settembre 2014 - Giugno 2019</p>
                                         <p class="text-slate-500 font-bold text-xs uppercase tracking-tight mb-2">I.I.S. "Fermi Sacconi Ceci", Ascoli Piceno</p>
                                         <p class="text-slate-600 leading-relaxed text-sm md:text-base">Focus su programmazione, reti e sistemi di telecomunicazione.</p>
@@ -102,21 +96,21 @@
                     </div>
 
                     <!-- 2. Work: Electrician -->
-                    <div class="timeline-item relative md:flex md:items-center md:flex-row-reverse group">
-                        <div class="md:w-5/12 mb-4 md:mb-0 opacity-40 group-hover:opacity-100 transition-opacity">
-                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1080" class="rounded-2xl shadow-lg border-2 border-white grayscale group-hover:grayscale-0 transition-all w-full" alt="Electrician">
+                    <div class="timeline-item relative md:flex md:items-center md:flex-row-reverse group mb-12">
+                        <div class="md:w-5/12 mb-4 md:mb-0 opacity-40 group-hover:opacity-100 transition-opacity hidden md:block">
+                            <img src="public/images/journey/electrician.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1080';" class="rounded-2xl shadow-lg border-2 border-white grayscale group-hover:grayscale-0 transition-all w-full" alt="Electrician">
                         </div>
                         <div class="timeline-dot-container hidden md:flex md:w-2/12 md:justify-center">
                             <div class="timeline-dot w-6 h-6 md:w-8 md:h-8 bg-white border-2 md:border-4 border-slate-200 rounded-full z-20 group-hover:border-blue-600 group-hover:scale-125 transition-all cursor-pointer shadow-sm"></div>
                         </div>
                         <div class="md:w-5/12">
-                            <div class="timeline-content bg-white p-6 rounded-2xl md:rounded-3xl shadow-lg border border-transparent group-hover:border-blue-100 transition-all cursor-pointer text-right">
+                            <div class="timeline-content bg-white p-6 rounded-2xl md:rounded-3xl shadow-lg border border-transparent group-hover:border-blue-100 transition-all cursor-pointer">
                                 <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 overflow-hidden">
-                                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest min-h-0">Work Experience</span>
+                                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest min-h-0 text-center md:text-right">Work Experience</span>
                                 </div>
-                                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mt-1">Elettricista</h3>
+                                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mt-1 text-center md:text-right">Elettricista</h3>
                                 <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 overflow-hidden">
-                                    <div class="min-h-0">
+                                    <div class="min-h-0 text-left">
                                         <p class="text-blue-600 font-bold mt-2 tracking-tighter">Marzo 2017 - Aprile 2017</p>
                                         <p class="text-slate-500 font-bold text-xs uppercase tracking-tight mb-2">TV SERVICE - ELETTRODOMESTICI ELETTROMEDICALI, Ascoli Piceno</p>
                                         <p class="text-slate-600 leading-relaxed text-sm md:text-base">Progettazione impianti, troubleshooting logico su guasti complessi e gestione logistica componenti elettronici.</p>
@@ -127,9 +121,9 @@
                     </div>
 
                     <!-- 3. Work: IT Specialist -->
-                    <div class="timeline-item relative md:flex md:items-center group">
-                        <div class="md:w-5/12 mb-4 md:mb-0 opacity-40 group-hover:opacity-100 transition-opacity">
-                            <img src="https://images.unsplash.com/photo-1599585113438-291af1a8d1db?auto=format&fit=crop&q=80&w=1154" class="rounded-2xl shadow-lg border-2 border-white grayscale group-hover:grayscale-0 transition-all w-full" alt="IT Specialist">
+                    <div class="timeline-item relative md:flex md:items-center group mb-12">
+                        <div class="md:w-5/12 mb-4 md:mb-0 opacity-40 group-hover:opacity-100 transition-opacity hidden md:block">
+                            <img src="public/images/journey/it-specialist.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1599585113438-291af1a8d1db?auto=format&fit=crop&q=80&w=1154';" class="rounded-2xl shadow-lg border-2 border-white grayscale group-hover:grayscale-0 transition-all w-full" alt="IT Specialist">
                         </div>
                         <div class="timeline-dot-container hidden md:flex md:w-2/12 md:justify-center">
                             <div class="timeline-dot w-6 h-6 md:w-8 md:h-8 bg-white border-2 md:border-4 border-slate-200 rounded-full z-20 group-hover:border-blue-600 group-hover:scale-125 transition-all cursor-pointer shadow-sm"></div>
@@ -137,11 +131,11 @@
                         <div class="md:w-5/12">
                             <div class="timeline-content bg-white p-6 rounded-2xl md:rounded-3xl shadow-lg border border-transparent group-hover:border-blue-100 transition-all cursor-pointer">
                                 <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 overflow-hidden">
-                                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest min-h-0">Work Experience</span>
+                                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest min-h-0 text-center md:text-left">Work Experience</span>
                                 </div>
-                                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mt-1">Specialista Informatico</h3>
+                                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mt-1 text-center md:text-left">Specialista Informatico</h3>
                                 <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 overflow-hidden">
-                                    <div class="min-h-0">
+                                    <div class="min-h-0 text-left">
                                         <p class="text-blue-600 font-bold mt-2 tracking-tighter">Marzo 2018 - Aprile 2018</p>
                                         <p class="text-slate-500 font-bold text-xs uppercase tracking-tight mb-2">Logix S.r.l., Ascoli Piceno</p>
                                         <p class="text-slate-600 leading-relaxed text-sm md:text-base">Sviluppo software personalizzato, gestione infrastrutture IT e manutenzione tecnica preventiva.</p>
@@ -152,21 +146,21 @@
                     </div>
 
                     <!-- 4. Education: University -->
-                    <div class="timeline-item relative md:flex md:items-center md:flex-row-reverse group">
-                        <div class="md:w-5/12 mb-4 md:mb-0 opacity-40 group-hover:opacity-100 transition-opacity">
-                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=1080" class="rounded-2xl shadow-lg border-2 border-white grayscale group-hover:grayscale-0 transition-all w-full" alt="University">
+                    <div class="timeline-item relative md:flex md:items-center md:flex-row-reverse group mb-12">
+                        <div class="md:w-5/12 mb-4 md:mb-0 opacity-40 group-hover:opacity-100 transition-opacity hidden md:block">
+                            <img src="public/images/journey/university.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=1080';" class="rounded-2xl shadow-lg border-2 border-white grayscale group-hover:grayscale-0 transition-all w-full" alt="University">
                         </div>
                         <div class="timeline-dot-container hidden md:flex md:w-2/12 md:justify-center">
                             <div class="timeline-dot w-6 h-6 md:w-8 md:h-8 bg-white border-2 md:border-4 border-slate-200 rounded-full z-20 group-hover:border-blue-600 group-hover:scale-125 transition-all cursor-pointer shadow-sm"></div>
                         </div>
                         <div class="md:w-5/12">
-                            <div class="timeline-content bg-white p-6 rounded-2xl md:rounded-3xl shadow-lg border border-transparent group-hover:border-blue-100 transition-all cursor-pointer text-right">
+                            <div class="timeline-content bg-white p-6 rounded-2xl md:rounded-3xl shadow-lg border border-transparent group-hover:border-blue-100 transition-all cursor-pointer">
                                 <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 overflow-hidden">
-                                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest min-h-0">Education</span>
+                                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest min-h-0 text-center md:text-right">Education</span>
                                 </div>
-                                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mt-1">Computer and Information Sciences</h3>
+                                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mt-1 text-center md:text-right">Computer and Information Sciences</h3>
                                 <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 overflow-hidden">
-                                    <div class="min-h-0">
+                                    <div class="min-h-0 text-left">
                                         <p class="text-blue-600 font-bold mt-2 tracking-tighter">Ottobre 2019 - Presente</p>
                                         <p class="text-slate-500 font-bold text-xs uppercase tracking-tight mb-2">Università di Camerino (UNICAM)</p>
                                         <p class="text-slate-600 leading-relaxed text-sm md:text-base">Studi focalizzati su ingegneria del software, algoritmi e basi di dati.</p>
@@ -177,9 +171,9 @@
                     </div>
 
                     <!-- 5. Work: Full-Stack Developer -->
-                    <div class="timeline-item relative md:flex md:items-center group">
-                        <div class="md:w-5/12 mb-4 md:mb-0 opacity-40 group-hover:opacity-100 transition-opacity">
-                            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1331" class="rounded-2xl shadow-lg border-2 border-white grayscale group-hover:grayscale-0 transition-all w-full" alt="Full-Stack Developer">
+                    <div class="timeline-item relative md:flex md:items-center group mb-12">
+                        <div class="md:w-5/12 mb-4 md:mb-0 opacity-40 group-hover:opacity-100 transition-opacity hidden md:block">
+                            <img src="public/images/journey/fullstack-dev.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1331';" class="rounded-2xl shadow-lg border-2 border-white grayscale group-hover:grayscale-0 transition-all w-full" alt="Full-Stack Developer">
                         </div>
                         <div class="timeline-dot-container hidden md:flex md:w-2/12 md:justify-center">
                             <div class="timeline-dot w-6 h-6 md:w-8 md:h-8 bg-white border-2 md:border-4 border-slate-200 rounded-full z-20 group-hover:border-blue-600 group-hover:scale-125 transition-all cursor-pointer shadow-sm"></div>
@@ -187,11 +181,11 @@
                         <div class="md:w-5/12">
                             <div class="timeline-content bg-white p-6 rounded-2xl md:rounded-3xl shadow-lg border border-transparent group-hover:border-blue-100 transition-all cursor-pointer">
                                 <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 overflow-hidden">
-                                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest min-h-0">Work Experience</span>
+                                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest min-h-0 text-center md:text-left">Work Experience</span>
                                 </div>
-                                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mt-1">Sviluppatore Full Stack</h3>
+                                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mt-1 text-center md:text-left">Sviluppatore Full Stack</h3>
                                 <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 overflow-hidden">
-                                    <div class="min-h-0">
+                                    <div class="min-h-0 text-left">
                                         <p class="text-blue-600 font-bold mt-2 tracking-tighter">Gennaio 2024 - Presente</p>
                                         <p class="text-slate-500 font-bold text-xs uppercase tracking-tight mb-2">Rinascita Informatica, Ascoli Piceno</p>
                                         <p class="text-slate-600 leading-relaxed text-sm md:text-base">Sviluppo software gestionale cross-platform 4D/Web e ricerca per il re-engineering completo dell'infrastruttura IT.</p>
