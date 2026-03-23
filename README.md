@@ -30,6 +30,9 @@ Simply open the `index.html` file in any modern web browser. Since this is a sta
 - **Responsive & Modern Design**: Fully optimized for all screen sizes, featuring a clean, professional aesthetic with blue and slate accents.
 - **Clean Code Architecture**: Strict separation of concerns between structure, style, and behavior for better maintainability.
 
+## 🆕 Novità
+- In attesa del primo deploy automatico.
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
