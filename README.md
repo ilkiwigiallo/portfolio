@@ -31,7 +31,7 @@ Simply open the `index.html` file in any modern web browser. Since this is a sta
 - **Clean Code Architecture**: Strict separation of concerns between structure, style, and behavior for better maintainability.
 
 ## 🆕 Novità
-- **23/03/2026 15:51**: feat: implement automatic Vercel deployment and README news updates
+- **23/03/2026 16:09**: docs: add deployment setup documentation
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
