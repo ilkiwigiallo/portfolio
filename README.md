@@ -31,7 +31,7 @@ Simply open the `index.html` file in any modern web browser. Since this is a sta
 - **Clean Code Architecture**: Strict separation of concerns between structure, style, and behavior for better maintainability.
 
 ## 🆕 Novità
-- **23/03/2026 16:15**: docs: translate deployment setup to English
+- **27/05/2026 16:45**: docs: update work experience end date for Rinascita Informatica
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
