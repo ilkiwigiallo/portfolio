@@ -31,7 +31,7 @@ Simply open the `index.html` file in any modern web browser. Since this is a sta
 - **Clean Code Architecture**: Strict separation of concerns between structure, style, and behavior for better maintainability.
 
 ## 🆕 Novità
-- **27/05/2026 16:45**: docs: update work experience end date for Rinascita Informatica
+- **24/07/2026 15:28**: feat: Update Vercel action version in deploy workflow
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
